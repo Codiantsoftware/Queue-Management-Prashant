@@ -124,7 +124,7 @@ Frontend will start on: [http://localhost:5173](http://localhost:5173)
 
 #### Terminal 3 - Webhook Test Server
 ```bash
-cd webhookTest
+cd WebhookTest
 npm run dev
 ```
 Webhook test server will start on: [http://localhost:3001](http://localhost:3001)
