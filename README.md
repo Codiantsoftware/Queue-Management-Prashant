@@ -5,9 +5,9 @@ A full-stack application consisting of a backend API, React frontend, and webhoo
 ## Project Structure
 
 ```
-├── backend/          # Express.js API server
-├── frontend/         # React + Vite frontend
-└── webhookTest/      # Webhook testing server
+├── Backend/          # Express.js API server
+├── Frontend/         # React + Vite frontend
+└── WebhookTest/      # Webhook testing server
 ```
 
 ## Prerequisites
@@ -28,15 +28,15 @@ Install dependencies for all three projects:
 
 ```bash
 # Backend dependencies
-cd backend
+cd Backend
 npm install
 
 # Frontend dependencies
-cd ../frontend
+cd ../Frontend
 npm install
 
 # Webhook test server dependencies
-cd ../webhookTest
+cd ../WebhookTest
 npm install
 ```
 
