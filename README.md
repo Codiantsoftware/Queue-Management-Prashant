@@ -1,24 +1,39 @@
 # AI Workflow Management System
 
-A full-stack application consisting of a backend API, React frontend, and webhook testing server for managing AI job workflows.
+A full-stack application consisting of a Backend API, React Frontend, and webhook testing server for managing AI job workflows.
 
 ## Project Structure
 
 ```
-├── backend/          # Express.js API server
-├── frontend/         # React + Vite frontend
-└── webhookTest/      # Webhook testing server
+├── Backend/          # Express.js API server
+├── Frontend/         # React + Vite Frontend
+└── WebhookTest/      # Webhook testing server
 ```
 
 ## Prerequisites
 
 - Node.js (v16 or higher)  
 - npm or yarn  
-- Redis server (for backend job queue)  
+- Redis server (for Backend job queue)  
 
 ⚡ **Windows Users:** Official Redis for Windows is deprecated. Please use **Memurai** (a Redis-compatible server for Windows).
 
 ---
+
+## Git Repository
+
+The project is hosted on GitHub:  
+🔗 [Queue-Management-Prashant](https://github.com/Codiantsoftware/Queue-Management-Prashant.git)  
+
+- **Default branch:** `main` 
+- **Updated branch:** `develop` 
+
+### Clone the Repository
+```bash
+git clone https://github.com/Codiantsoftware/Queue-Management-Prashant.git
+cd Queue-Management-Prashant
+git checkout develop
+
 
 ## Quick Start
 
@@ -28,15 +43,15 @@ Install dependencies for all three projects:
 
 ```bash
 # Backend dependencies
-cd backend
+cd Backend
 npm install
 
 # Frontend dependencies
-cd ../frontend
+cd ../Frontend
 npm install
 
 # Webhook test server dependencies
-cd ../webhookTest
+cd ../WebhookTest
 npm install
 ```
 
@@ -95,21 +110,21 @@ Open three terminal windows/tabs and run the following commands:
 
 #### Terminal 1 - Backend Server
 ```bash
-cd backend
+cd Backend
 npm run dev
 ```
 Backend will start on: [http://localhost:3000](http://localhost:3000)
 
 #### Terminal 2 - Frontend Development Server
 ```bash
-cd frontend
+cd Frontend
 npm run dev
 ```
 Frontend will start on: [http://localhost:5173](http://localhost:5173)
 
 #### Terminal 3 - Webhook Test Server
 ```bash
-cd webhookTest
+cd WebhookTest
 npm run dev
 ```
 Webhook test server will start on: [http://localhost:3001](http://localhost:3001)
@@ -134,7 +149,7 @@ Webhook test server will start on: [http://localhost:3001](http://localhost:3001
 ## Environment Variables
 
 ### Backend
-Create a `.env` file in the `backend` directory:
+Create a `.env` file in the `Backend` directory:
 
 ```env
 PORT=3000
@@ -143,7 +158,7 @@ NODE_ENV=development
 ```
 
 ### Frontend
-Create a `.env` file in the `frontend` directory:
+Create a `.env` file in the `Frontend` directory:
 
 ```env
 VITE_API_URL=http://localhost:3000
@@ -155,7 +170,7 @@ VITE_API_URL=http://localhost:3000
 
 - **Backend**: RESTful API with job queue management, Redis/Memurai integration, security middleware  
 - **Frontend**: Modern React app with Redux state management, Tailwind CSS styling  
-- **Webhook Test**: Simple server to test webhook notifications from the backend  
+- **Webhook Test**: Simple server to test webhook notifications from the Backend  
 
 ---
 
@@ -172,7 +187,7 @@ VITE_API_URL=http://localhost:3000
 
 1. **Redis/Memurai Connection Error**: Make sure Redis/Memurai server is running  
 2. **Port Already in Use**: Change ports in the respective `.env` files  
-3. **CORS Issues**: Check backend CORS configuration  
+3. **CORS Issues**: Check Backend CORS configuration  
 4. **Module Not Found**: Run `npm install` in the respective project directory  
 
 ---
