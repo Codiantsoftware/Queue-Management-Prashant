@@ -20,6 +20,21 @@ A full-stack application consisting of a Backend API, React Frontend, and webhoo
 
 ---
 
+## Git Repository
+
+The project is hosted on GitHub:  
+🔗 [Queue-Management-Prashant](https://github.com/Codiantsoftware/Queue-Management-Prashant.git)  
+
+- **Default branch:** `main` 
+- **Updated branch:** `develop` 
+
+### Clone the Repository
+```bash
+git clone https://github.com/Codiantsoftware/Queue-Management-Prashant.git
+cd Queue-Management-Prashant
+git checkout develop
+
+
 ## Quick Start
 
 ### 1. Install Dependencies
